@@ -5,8 +5,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pátio Vivo — nenhum lead sem resposta em 1 minuto</title>
 <meta name="description" content="A infraestrutura de vendas com IA para revendas de carros usados. Resposta em 1 minuto, test-drive agendado 24/7, base antiga reativada.">
+<link rel="canonical" href="https://patiovivo.com.br/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://patiovivo.com.br/">
+<meta property="og:title" content="Pátio Vivo — nenhum lead sem resposta em 1 minuto">
+<meta property="og:description" content="A máquina de venda de carros no WhatsApp: responde em segundos, qualifica e agenda test-drive 24/7. Para revendas de usados — Itajaí e região.">
+<meta property="og:image" content="https://patiovivo.com.br/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#070707">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700;800;900&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
 <style>
   :root { --fundo:#070707; --card:#101014; --borda:#232330; --roxo:#6B43EF; --lilas:#A78BFA; --texto:#EEEEEE; --mudo:#9A9AA5; --wa:#1f2c24; --wa2:#202c33; }
   * { margin:0; padding:0; box-sizing:border-box; }
@@ -27,7 +42,14 @@
   .cta { display:inline-block; background:#fff; color:#0a0a0a; font-weight:600; padding:13px 30px; border-radius:10px; text-decoration:none; font-size:15px; transition:transform .25s, box-shadow .25s; }
   .cta:hover { transform:translateY(-2px); box-shadow:0 10px 34px rgba(107,67,239,.4); }
   .cta.grande { font-size:17px; padding:17px 52px; }
-  .pill { display:inline-block; border:1px solid rgba(70,32,183,.55); background:rgba(107,67,239,.09); border-radius:200px; padding:9px 22px; font-size:13.5px; color:#cfc6f2; }
+  .pill { display:inline-block; border:1px solid rgba(70,32,183,.55); background:rgba(107,67,239,.09); border-radius:200px; padding:9px 22px; font-size:13.5px; color:#cfc6f2; max-width:100%; }
+  @media (max-width:480px) {
+    .logo-svg { height:24px; }
+    .cta { padding:10px 16px; font-size:13.5px; }
+    .cta.grande { padding:15px 26px; font-size:15.5px; }
+    .pill { font-size:12px; padding:8px 14px; }
+    section { padding:64px 0; }
+  }
   /* HERO */
   .hero { padding:80px 0 90px; background:radial-gradient(ellipse 55% 42% at 68% 18%, rgba(107,67,239,.22) 0%, transparent 65%); overflow:hidden; }
   .hero .wrap { display:grid; grid-template-columns:1.15fr .85fr; gap:48px; align-items:center; }
@@ -37,7 +59,7 @@
   .selos { display:flex; gap:10px; flex-wrap:wrap; margin-top:34px; }
   .selo { border:1px solid var(--borda); background:var(--card); padding:9px 18px; border-radius:200px; font-size:13px; color:var(--mudo); }
   .selo b { color:var(--texto); }
-  .entra { opacity:0; transform:translateY(18px); animation:entra .8s cubic-bezier(.2,.7,.3,1) forwards; }
+  .js .entra { opacity:0; transform:translateY(18px); animation:entra .8s cubic-bezier(.2,.7,.3,1) forwards; }
   .d1{animation-delay:.05s} .d2{animation-delay:.18s} .d3{animation-delay:.32s} .d4{animation-delay:.46s} .d5{animation-delay:.6s}
   @keyframes entra { to { opacity:1; transform:none; } }
   /* FONE — a assinatura */
@@ -124,8 +146,8 @@
   details[open] summary::after { transform:rotate(45deg); }
   details .resp { padding:0 24px 20px; color:var(--mudo); font-size:15px; }
   /* reveal on scroll */
-  .rv { opacity:0; transform:translateY(26px); transition:opacity .7s cubic-bezier(.2,.7,.3,1), transform .7s cubic-bezier(.2,.7,.3,1); }
-  .rv.on { opacity:1; transform:none; }
+  .js .rv { opacity:0; transform:translateY(26px); transition:opacity .7s cubic-bezier(.2,.7,.3,1), transform .7s cubic-bezier(.2,.7,.3,1); }
+  .js .rv.on { opacity:1; transform:none; }
   /* final */
   .final { text-align:center; background:radial-gradient(ellipse 55% 60% at 50% 100%, rgba(107,67,239,.2) 0%, transparent 75%); padding-bottom:130px; }
   .final p { color:var(--mudo); max-width:660px; margin:14px auto 36px; font-size:17px; }

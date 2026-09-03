@@ -66,7 +66,7 @@ Teste rápido que você mesmo pode fazer antes das amostras chegarem: caneta de 
 | tesa Brasil | multinacional, fabrica/converte no BR | São José dos Pinhais/PR e SP | tesabrasil@tesa.com · (41) 3021-8100 | e-mail enviado |
 | Adelbras | fabricante nacional (1969) | Vinhedo/SP | sac@adelbras.com · (19) 4009-7711 | e-mail enviado |
 | Eurocel / Sicad do Brasil | fabricante (grupo italiano, fábrica no BR) | Capivari/SP | sicad@sicad.com.br · (19) 3492-9710 | e-mail enviado |
-| Global Tape | fabricante nacional | São Paulo/SP | contato@globaltape.com.br · (11) 2606-6262 | e-mail enviado |
+| Global Tape | fabricante nacional | São Paulo/SP | contato@globaltape.com.br · (11) 2606-6262 · representante Sul: Leticia Stela leticia.stela@grupobch.com.br, atendimento SC: Emerson emerson@grupobch.com.br | RESPONDEU 03/09 14:22: indica DS35 (tissue) para EVA e parede, enviou fichas DS35-P, DS303 A e DS32 T; faz rolos até 50 m nas larguras pedidas; pede CNPJ e consumo mensal para cotação; propõe visita técnica em SC a partir de terça 08/09 e amostras para teste em máquina |
 | Tekbond (Saint-Gobain) | fabricante/importador | Embu das Artes/SP | sac@tekbond.com.br · (11) 4785-6600 | e-mail enviado |
 | Cremer Industriais | fabricante nacional (Blumenau, a 60 km de Itajaí) | Blumenau/SC | vendas.adesivos@cremer.com.br · 0800 727 0456 · (47) 99204-1128 | e-mail enviado |
 | Alltape | fabricante nacional (1999) | Capivari/SP | alltape@alltape.com.br · (19) 3492-9700 (contato@alltape.com.br devolveu: endereço não existe) | e-mail reenviado 06:20 UTC |

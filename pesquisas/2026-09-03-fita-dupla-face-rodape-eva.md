@@ -69,7 +69,7 @@ Teste rápido que você mesmo pode fazer antes das amostras chegarem: caneta de 
 | Global Tape | fabricante nacional | São Paulo/SP | contato@globaltape.com.br · (11) 2606-6262 | e-mail enviado |
 | Tekbond (Saint-Gobain) | fabricante/importador | Embu das Artes/SP | sac@tekbond.com.br · (11) 4785-6600 | e-mail enviado |
 | Cremer Industriais | fabricante nacional (Blumenau, a 60 km de Itajaí) | Blumenau/SC | vendas.adesivos@cremer.com.br · 0800 727 0456 · (47) 99204-1128 | e-mail enviado |
-| Alltape | fabricante nacional (1999) | Capivari/SP | contato@alltape.com.br · (19) 3492-9700 | e-mail enviado |
+| Alltape | fabricante nacional (1999) | Capivari/SP | alltape@alltape.com.br · (19) 3492-9700 (contato@alltape.com.br devolveu: endereço não existe) | e-mail reenviado 06:20 UTC |
 | Fit-Pel | fabricante nacional (1989), linha dupla face BOPP/papel/acrílica/EVA | São Paulo/SP | sac@fitpel.com.br · (11) 2694-9446 · WhatsApp (11) 99393-5875 | e-mail enviado |
 | Unespuma | conversor de fitas de espuma EVA/PE (conhece o substrato) | Guarulhos/SP | contato@unespuma.com.br · (11) 2412-8182 | e-mail enviado |
 | Adere | maior fabricante nacional (1967) | Sumaré/SP | só formulário: https://www.adere.com/pt/contato · (19) 2104-0700 | ação manual (formulário/telefone) |
@@ -84,7 +84,7 @@ Teste rápido que você mesmo pode fazer antes das amostras chegarem: caneta de 
 
 Assunto: "Consulta técnica – fita dupla face para rodapé flexível de EVA (aderência ao EVA e à parede)". Texto pede: produto recomendado (fita diferencial bem-vinda), ficha técnica, amostras, formatos (largura/jumbo), preço em volume industrial, prazo e suporte técnico. Explica os dois problemas (EVA = baixa energia superficial; parede = massa corrida + tinta, memória do perfil, umidade). Assinado Raphael Berger, Berger Acabamentos, Itajaí/SC.
 
-Destinatários: tesa Brasil, Adelbras, Eurocel/Sicad, Global Tape, Tekbond, Cremer Industriais, Alltape, Fit-Pel, Unespuma. As respostas chegam na caixa do fabricaberger@gmail.com.
+Destinatários: tesa Brasil, Adelbras, Eurocel/Sicad, Global Tape, Tekbond, Cremer Industriais, Alltape, Fit-Pel, Unespuma. Checagem de devoluções às 06:15 UTC: só contato@alltape.com.br devolveu ("endereço não encontrado"); reenviado para alltape@alltape.com.br. Os outros 8 não devolveram. As respostas chegam na caixa do fabricaberger@gmail.com.
 
 ## 7. Próximos passos sugeridos
 

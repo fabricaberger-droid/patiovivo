@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pátio Vivo — nenhum lead sem resposta em 1 minuto</title>
-<meta name="description" content="A infraestrutura de vendas com IA para revendas de carros usados. Resposta em 1 minuto, test-drive agendado 24/7, base antiga reativada.">
+<meta name="description" content="Inteligência comercial para revendas de carros usados. Resposta em 1 minuto, test-drive agendado 24/7, base antiga reativada.">
 <link rel="canonical" href="https://patiovivo.com.br/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://patiovivo.com.br/">
@@ -75,12 +75,6 @@
   .deles { background:var(--wa2); align-self:flex-start; border-top-left-radius:2px; }
   .nosso { background:#005c4b; align-self:flex-end; border-top-right-radius:2px; }
   .msg .h { display:block; font-size:9.5px; color:rgba(255,255,255,.5); text-align:right; margin-top:3px; }
-  .card-carro { background:#111b21; border:1px solid #2a3942; border-radius:10px; overflow:hidden; align-self:flex-end; max-width:86%; opacity:0; transform:translateY(8px); transition:.35s; }
-  .card-carro.on { opacity:1; transform:none; }
-  .card-carro .foto-carro { height:74px; background:linear-gradient(120deg,#1b2530,#26303c); display:flex; align-items:center; justify-content:center; font-size:30px; }
-  .card-carro .info { padding:8px 11px; font-size:12px; }
-  .card-carro .info b { font-size:12.5px; }
-  .card-carro .info span { color:#8fa3ad; display:block; font-size:11px; }
   .agendado { align-self:center; background:rgba(107,67,239,.16); border:1px solid rgba(167,139,250,.5); color:#d9d1f7; font-size:11.5px; padding:7px 14px; border-radius:200px; opacity:0; transition:.4s; text-align:center; }
   .agendado.on { opacity:1; }
   .digitando { align-self:flex-end; background:#005c4b; border-radius:10px; padding:9px 13px; display:none; }
@@ -241,6 +235,55 @@
     html { scroll-behavior:auto; }
     .pulso { display:none; }
   }
+  /* ===== "O que muda no seu pátio" — tabela antes x depois (06/09/2026) ===== */
+  .muda { max-width:980px; margin:0 auto; border:1px solid var(--borda); border-radius:16px; overflow:hidden; background:linear-gradient(180deg,#0d0d12,#0a0a0e); }
+  .muda-cab, .muda-linha { display:grid; grid-template-columns:1.15fr 1fr 1.25fr; align-items:center; }
+  .muda-cab { padding:14px 22px; border-bottom:1px solid var(--borda); font-size:12.5px; letter-spacing:2px; text-transform:uppercase; font-weight:700; }
+  .muda-cab .c-hoje { color:var(--mudo); }
+  .muda-cab .c-com { color:var(--lilas); }
+  .muda-linha { padding:18px 22px; border-bottom:1px solid rgba(35,35,48,.6); font-size:16px; gap:12px; }
+  .muda-linha:last-child { border-bottom:0; }
+  .muda-linha .q { color:var(--texto); font-weight:600; }
+  .muda-linha .hoje { color:#6E6E7A; }
+  .muda-linha .com { color:var(--texto); }
+  .muda-linha .com b { font-weight:700; }
+  .muda-linha .com { position:relative; padding-left:16px; }
+  .muda-linha .com::before { content:""; position:absolute; left:0; top:2px; bottom:2px; width:3px; border-radius:3px; background:linear-gradient(180deg,var(--lilas),var(--roxo)); }
+
+  /* ===== A bandeja: o que cai na mão do vendedor ===== */
+  .bandeja-bloco { max-width:720px; margin:64px auto 0; }
+  .bandeja-frase { text-align:center; font-size:19px; color:var(--texto); margin-bottom:26px; }
+  .bandeja-frase b { color:var(--lilas); }
+  .bandeja { border:1px solid var(--borda); border-radius:16px; background:var(--card); overflow:hidden; box-shadow:0 24px 60px rgba(0,0,0,.5); }
+  .bj-topo { display:flex; align-items:center; justify-content:space-between; padding:14px 20px; border-bottom:1px solid var(--borda); background:#0c0c11; }
+  .bj-tag { font-size:12px; letter-spacing:2px; text-transform:uppercase; font-weight:800; color:var(--lilas); }
+  .bj-hora { font-size:13px; color:var(--mudo); }
+  .bj-corpo { padding:6px 20px; }
+  .bj-item { display:grid; grid-template-columns:150px 1fr; gap:14px; align-items:baseline; padding:13px 0; border-bottom:1px solid rgba(35,35,48,.55); }
+  .bj-item:last-child { border-bottom:0; }
+  .bj-item small { color:var(--mudo); font-size:13.5px; }
+  .bj-item b { color:var(--texto); font-size:16px; font-weight:600; }
+  .bj-rodape { display:flex; align-items:center; gap:14px; padding:16px 20px; background:linear-gradient(90deg,rgba(107,67,239,.16),rgba(167,139,250,.05)); border-top:1px solid var(--borda); }
+  .bj-check { flex:0 0 34px; height:34px; border-radius:50%; display:grid; place-items:center; background:linear-gradient(140deg,var(--lilas),var(--roxo)); color:#fff; font-weight:800; }
+  .bj-rodape b { display:block; color:var(--texto); font-size:16.5px; }
+  .bj-rodape small { display:block; color:var(--mudo); font-size:13.5px; margin-top:2px; }
+  .bandeja-pe { text-align:center; color:var(--mudo); font-size:16px; margin-top:24px; }
+  .bandeja-pe b { color:var(--texto); }
+
+  .areas-chips { display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin:52px auto 0; max-width:820px; }
+  .areas-chips span { border:1px solid var(--borda); border-radius:999px; padding:8px 16px; font-size:12.5px; letter-spacing:1.6px; font-weight:700; color:var(--mudo); }
+
+  @media (max-width:760px) {
+    .muda-cab { display:none; }
+    .muda-linha { grid-template-columns:1fr; gap:6px; padding:16px 18px; }
+    .muda-linha .q { font-size:15px; }
+    .muda-linha .hoje::before { content:"Hoje: "; color:#4E4E58; }
+    .muda-linha .com { padding-left:14px; margin-top:4px; }
+    .bj-item { grid-template-columns:1fr; gap:3px; }
+    .bandeja-frase { font-size:17px; }
+  }
+  .maquina-arte .arte-maq { max-width:1180px; margin:0 auto; border-radius:16px; overflow:hidden; border:1px solid var(--borda); box-shadow:0 30px 80px rgba(0,0,0,.55); }
+  .maquina-arte .arte-maq img { display:block; width:100%; height:auto; }
 </style>
 </head>
 <body>
@@ -257,13 +300,13 @@
 
 <section class="hero"><div class="wrap">
   <div>
-    <span class="pill entra d1">Infraestrutura de vendas com IA · revendas de veículos</span>
+    <span class="pill entra d1">Inteligência comercial para revenda de veículos</span>
     <h1 class="entra d2">Pare de perder o lead que você <span class="grad">já pagou</span>.</h1>
-    <p class="sub entra d3">Do lado direito, um lead REAL das 21h47 sendo atendido, qualificado e agendado — em segundos, sem nenhum humano acordado. É isso que instalamos na sua loja. Sem promessas vazias, só processo.</p>
+    <p class="sub entra d3">Do lado direito, um lead das 21h47 sendo atendido, qualificado e agendado — enquanto a sua equipe dorme. De manhã, o vendedor pega o comprador quente e fecha. É isso que instalamos na sua loja. Sem promessas vazias, só processo.</p>
     <a class="cta grande entra d4" href="#diagnostico">Quero o diagnóstico de 30 minutos</a>
     <div class="selos entra d5">
       <div class="selo"><b>2 implantações/mês</b> — o fundador cuida pessoalmente</div>
-      <div class="selo">Setup em <b>14 dias</b></div>
+      <div class="selo">Setup em <b>45 dias</b></div>
       <div class="selo"><b>Garantia</b> com prova no painel</div>
     </div>
   </div>
@@ -272,110 +315,116 @@
       <div class="wa-topo"><div class="foto">PV</div><div><b>Loja · Atendimento</b><span id="status-wa">online</span></div></div>
       <div class="chat" id="chat"></div>
     </div></div>
-    <p class="fone-legenda">▲ Simulação real do agente — <b>21h47 de uma terça-feira</b></p>
+    <p class="fone-legenda">▲ Conversa-modelo do atendimento — o padrão que roda no WhatsApp da loja, <b>21h47 de uma terça</b></p>
   </div>
 </div></section>
 
-<section class="maquina" style="padding-top:60px"><div class="wrapx">
-  <span class="eyebrow rv">O sistema IA-first</span>
-  <h2 class="rv">A máquina por trás — <span class="grad">viva e aprendendo</span></h2>
-  <p class="sub-secao rv">Tudo que acontece no seu pátio alimenta um cérebro que não esquece. O Mentor digere e entrega inteligência pronta pra cada área — e evolui a cada semana.</p>
-  <div class="maq-img rv" role="img" aria-label="Desenho da máquina: WhatsApp, Instagram, agenda, ligações, portais e ebook captam leads pro funil de vendas; o CRM alimenta o cérebro do negócio, o Mentor digere e distribui para vendas, marketing, financeiro, estoque, pós-venda e treinamento — e cada resultado volta pra máquina">
-    <img class="base" src="assets/maquina-v3.jpg" alt="">
-  </div>
-  <div class="fluxo rv">
-    <div class="circuito" aria-hidden="true">
-      <svg viewBox="0 0 1000 100" preserveAspectRatio="none">
-        <defs>
-          <linearGradient id="sgv" x1="1" y1="0" x2="0" y2="0">
-            <stop offset="0" stop-color="#6B43EF"/>
-            <stop offset="1" stop-color="#A78BFA"/>
-          </linearGradient>
-        </defs>
-        <path d="M 986 96 C 890 6, 128 6, 26 88" fill="none" stroke="#6B43EF" stroke-width="9" opacity="0.14"/>
-        <path id="loop1" d="M 986 96 C 890 6, 128 6, 26 88" fill="none" stroke="url(#sgv)" stroke-width="2.4" opacity="0.9" stroke-linecap="round"/>
-        <path d="M 986 92 C 892 2, 126 2, 26 84" fill="none" stroke="url(#sgv)" stroke-width="1.1" opacity="0.4"/>
-        <path d="M 984 99 C 888 11, 130 11, 28 92" fill="none" stroke="url(#sgv)" stroke-width="1.1" opacity="0.4"/>
-        <circle cx="984" cy="95" r="4.5" fill="#A78BFA"/>
-        <circle cx="28" cy="87" r="4.5" fill="#D9CFFA"/>
-        <circle class="pulso" r="3" fill="#EDE7FE"><animateMotion dur="5s" repeatCount="indefinite"><mpath href="#loop1"/></animateMotion></circle>
-        <circle class="pulso" r="2.2" fill="#C9B6FF"><animateMotion dur="5s" begin="-2.5s" repeatCount="indefinite"><mpath href="#loop1"/></animateMotion></circle>
-      </svg>
-      <span class="looplbl">↻ cada resultado volta — a máquina se alimenta e evolui</span>
+<section class="maquina-arte" style="padding-top:20px;padding-bottom:0">
+  <div class="wrapx">
+    <span class="eyebrow rv">O sistema por dentro</span>
+    <h2 class="rv">A máquina <span class="grad">por trás</span></h2>
+    <p class="sub-secao rv">Todo lead que chega entra num núcleo que aprende com cada conversa — e devolve inteligência pronta pra cada parte da loja.</p>
+    <div class="arte-maq rv">
+      <img src="assets/maquina-v8.jpg" alt="Desenho da máquina do Pátio Vivo: os canais onde a loja anuncia levam o comprador ao WhatsApp; o núcleo de IA processa e distribui inteligência para vendas, reativação da base, agenda, pátio e treinamento" loading="lazy">
     </div>
-    <div class="no-col">
-    <div class="painel">
-      <div class="topo"><i></i><i></i><i></i><span>Pátio Vivo · CRM</span></div>
-      <div class="corpo">
-        <div class="kpis">
-          <div class="kpi"><b>28</b><small>leads hoje</small></div>
-          <div class="kpi"><b>&lt;1min</b><small>1ª resposta</small></div>
-        </div>
-        <div class="grafico">
-          <i style="height:38%"></i><i style="height:52%"></i><i class="on" style="height:66%"></i><i style="height:47%"></i><i class="on" style="height:82%"></i><i style="height:58%"></i><i class="on" style="height:100%"></i>
-        </div>
-        <div class="fila">
-          <div class="row"><span class="b"></span>Carlos · Onix 2022 <span class="st quente">test drive</span></div>
-          <div class="row"><span class="b"></span>Ana · SUV até 90k <span class="st novo">novo</span></div>
-          <div class="row"><span class="b"></span>Júlio · Hilux 2021 <span class="st fechou">fechou</span></div>
-        </div>
+  </div>
+</section>
+
+<section class="maquina" style="padding-top:60px"><div class="wrapx">
+  <span class="eyebrow rv">O que muda no seu pátio</span>
+  <h2 class="rv">O mesmo lead. <span class="grad">Dois desfechos.</span></h2>
+  <p class="sub-secao rv">Nada muda na sua rotina. Muda o que acontece com o comprador que chega quando ninguém está olhando.</p>
+
+  <div class="muda rv">
+    <div class="muda-cab">
+      <span></span>
+      <span class="c-hoje">Hoje</span>
+      <span class="c-com">Com o Pátio&nbsp;Vivo</span>
+    </div>
+
+    <div class="muda-linha">
+      <span class="q">O comprador que chega às 21h47</span>
+      <span class="hoje">espera a loja abrir</span>
+      <span class="com"><b>respondido em 1 minuto</b></span>
+    </div>
+    <div class="muda-linha">
+      <span class="q">Domingo, feriado, hora do almoço</span>
+      <span class="hoje">ninguém atende</span>
+      <span class="com"><b>atendido na hora</b></span>
+    </div>
+    <div class="muda-linha">
+      <span class="q">Quem já comprou de você</span>
+      <span class="hoje">parado no celular do vendedor</span>
+      <span class="com"><b>reaberto toda semana</b></span>
+    </div>
+    <div class="muda-linha">
+      <span class="q">O carro que empacou no pátio</span>
+      <span class="hoje">ninguém lembra dele</span>
+      <span class="com"><b>a máquina lê o estoque e aponta</b></span>
+    </div>
+    <div class="muda-linha">
+      <span class="q">Quem fecha a venda</span>
+      <span class="hoje">seu vendedor, correndo atrás do lead</span>
+      <span class="com"><b>seu vendedor, com o test-drive já marcado</b></span>
+    </div>
+  </div>
+
+  <div class="bandeja-bloco rv">
+    <p class="bandeja-frase">Às <b>21h47</b> o comprador chegou. Às <b>8h da manhã</b> isso está na mesa do seu vendedor.</p>
+
+    <div class="bandeja">
+      <div class="bj-topo">
+        <span class="bj-tag">Lead qualificado</span>
+        <span class="bj-hora">terça, 21h53</span>
+      </div>
+      <div class="bj-corpo">
+        <div class="bj-item"><small>Chegou por</small><b>OLX → WhatsApp da loja</b></div>
+        <div class="bj-item"><small>Quer</small><b>Chevrolet Cruze Sport6 LT 1.8 · 2015/2016 · 87.370&nbsp;km</b></div>
+        <div class="bj-item"><small>Tem na troca</small><b>Onix 2018</b></div>
+        <div class="bj-item"><small>Pagamento</small><b>financiamento do restante</b></div>
+        <div class="bj-item"><small>Prazo dele</small><b>quer trocar ainda este mês</b></div>
+      </div>
+      <div class="bj-rodape">
+        <span class="bj-check">✓</span>
+        <span><b>Test-drive marcado — quinta, 10h</b><small>marcado pela máquina, sem ninguém acordado</small></span>
       </div>
     </div>
-    <h3>CRM</h3>
-    <p>tudo do seu pátio num lugar só</p>
-    </div>
-    <div class="seta"><span>alimenta</span><svg viewBox="0 0 112 74" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="sg1" gradientUnits="userSpaceOnUse" x1="0" y1="37" x2="112" y2="37"><stop offset="0" stop-color="#A78BFA"/><stop offset="1" stop-color="#6B43EF"/></linearGradient></defs><path d="M 0 37 C 34 14, 78 58, 112 37" fill="none" stroke="#6B43EF" stroke-width="7" opacity="0.16"/><path id="a1" d="M 0 37 C 34 14, 78 58, 112 37" fill="none" stroke="url(#sg1)" stroke-width="2.2" opacity="0.95"/><path d="M 0 33 C 34 10, 78 52, 112 33" fill="none" stroke="url(#sg1)" stroke-width="1.3" opacity="0.5"/><path id="a2" d="M 0 41 C 34 60, 78 20, 112 41" fill="none" stroke="url(#sg1)" stroke-width="1.3" opacity="0.5"/><path d="M 0 35 C 30 24, 82 46, 112 36" fill="none" stroke="url(#sg1)" stroke-width="0.9" opacity="0.32"/><path d="M 0 39 C 30 52, 82 28, 112 39" fill="none" stroke="url(#sg1)" stroke-width="0.9" opacity="0.32"/><circle cx="2" cy="37" r="4" fill="#A78BFA"/><circle cx="110" cy="37" r="4.5" fill="#D9CFFA"/><circle class="pulso" r="2.6" fill="#EDE7FE"><animateMotion dur="2.2s" repeatCount="indefinite"><mpath href="#a1"/></animateMotion></circle><circle class="pulso" r="2" fill="#C9B6FF"><animateMotion dur="2.8s" begin="-1.3s" repeatCount="indefinite"><mpath href="#a2"/></animateMotion></circle></svg></div>
-    <div class="cerebro-no">
-      <img src="assets/cerebro-transparente.png" alt="Cérebro de luz roxa em rede neural" loading="lazy">
-      <h3>CÉREBRO DO NEGÓCIO</h3>
-      <p>a memória viva do seu pátio</p>
-    </div>
-    <div class="seta"><span>digere</span><svg viewBox="0 0 112 74" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="sg2" gradientUnits="userSpaceOnUse" x1="0" y1="37" x2="112" y2="37"><stop offset="0" stop-color="#A78BFA"/><stop offset="1" stop-color="#6B43EF"/></linearGradient></defs><path d="M 0 37 C 34 58, 78 14, 112 37" fill="none" stroke="#6B43EF" stroke-width="7" opacity="0.16"/><path id="b1" d="M 0 37 C 34 58, 78 14, 112 37" fill="none" stroke="url(#sg2)" stroke-width="2.2" opacity="0.95"/><path d="M 0 41 C 34 62, 78 18, 112 41" fill="none" stroke="url(#sg2)" stroke-width="1.3" opacity="0.5"/><path id="b2" d="M 0 33 C 34 12, 78 54, 112 33" fill="none" stroke="url(#sg2)" stroke-width="1.3" opacity="0.5"/><path d="M 0 39 C 30 50, 82 26, 112 38" fill="none" stroke="url(#sg2)" stroke-width="0.9" opacity="0.32"/><path d="M 0 35 C 30 22, 82 48, 112 35" fill="none" stroke="url(#sg2)" stroke-width="0.9" opacity="0.32"/><circle cx="2" cy="37" r="4" fill="#A78BFA"/><circle cx="110" cy="37" r="4.5" fill="#D9CFFA"/><circle class="pulso" r="2.6" fill="#EDE7FE"><animateMotion dur="2.4s" begin="-0.7s" repeatCount="indefinite"><mpath href="#b1"/></animateMotion></circle><circle class="pulso" r="2" fill="#C9B6FF"><animateMotion dur="3s" begin="-1.9s" repeatCount="indefinite"><mpath href="#b2"/></animateMotion></circle></svg></div>
-    <div class="mentor-no">
-      <img class="cabeca" src="assets/mentor-cabelos.png" alt="O Mentor — cabeça cujos cabos se conectam às áreas da loja" loading="lazy">
-      <h3>MENTOR</h3>
-      <p>o agente que pensa —<br><b>aprende e evolui com o tempo</b></p>
-    </div>
-    <div class="seta fan"><svg viewBox="0 0 130 370" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="sg3" gradientUnits="userSpaceOnUse" x1="0" y1="185" x2="130" y2="185"><stop offset="0" stop-color="#A78BFA"/><stop offset="1" stop-color="#6B43EF"/></linearGradient></defs><path d="M 0 148 C 52 146, 62 37, 126 37" fill="none" stroke="#6B43EF" stroke-width="6" opacity="0.15"/><path d="M 0 167 C 52 166, 62 111, 126 111" fill="none" stroke="#6B43EF" stroke-width="6" opacity="0.15"/><path d="M 0 185 C 52 185, 62 185, 126 185" fill="none" stroke="#6B43EF" stroke-width="6" opacity="0.15"/><path d="M 0 203 C 52 204, 62 259, 126 259" fill="none" stroke="#6B43EF" stroke-width="6" opacity="0.15"/><path d="M 0 222 C 52 224, 62 333, 126 333" fill="none" stroke="#6B43EF" stroke-width="6" opacity="0.15"/><path id="f1" d="M 0 148 C 52 146, 62 37, 126 37" fill="none" stroke="url(#sg3)" stroke-width="1.9" opacity="0.9"/><path id="f2" d="M 0 167 C 52 166, 62 111, 126 111" fill="none" stroke="url(#sg3)" stroke-width="1.9" opacity="0.9"/><path id="f3" d="M 0 185 C 52 185, 62 185, 126 185" fill="none" stroke="url(#sg3)" stroke-width="1.9" opacity="0.9"/><path id="f4" d="M 0 203 C 52 204, 62 259, 126 259" fill="none" stroke="url(#sg3)" stroke-width="1.9" opacity="0.9"/><path id="f5" d="M 0 222 C 52 224, 62 333, 126 333" fill="none" stroke="url(#sg3)" stroke-width="1.9" opacity="0.9"/><path d="M 0 143 C 50 139, 64 30, 126 32" fill="none" stroke="url(#sg3)" stroke-width="0.8" opacity="0.3"/><path d="M 0 227 C 50 231, 64 340, 126 338" fill="none" stroke="url(#sg3)" stroke-width="0.8" opacity="0.3"/><path d="M 0 162 C 50 159, 64 105, 126 106" fill="none" stroke="url(#sg3)" stroke-width="0.8" opacity="0.3"/><path d="M 0 208 C 50 211, 64 265, 126 264" fill="none" stroke="url(#sg3)" stroke-width="0.8" opacity="0.3"/><circle cx="126" cy="37" r="4.5" fill="#D9CFFA"/><circle cx="126" cy="111" r="4.5" fill="#D9CFFA"/><circle cx="126" cy="185" r="4.5" fill="#D9CFFA"/><circle cx="126" cy="259" r="4.5" fill="#D9CFFA"/><circle cx="126" cy="333" r="4.5" fill="#D9CFFA"/><circle class="pulso" r="2.4" fill="#EDE7FE"><animateMotion dur="2.1s" repeatCount="indefinite"><mpath href="#f1"/></animateMotion></circle><circle class="pulso" r="2.4" fill="#EDE7FE"><animateMotion dur="2.1s" begin="-0.42s" repeatCount="indefinite"><mpath href="#f2"/></animateMotion></circle><circle class="pulso" r="2.4" fill="#EDE7FE"><animateMotion dur="2.1s" begin="-0.84s" repeatCount="indefinite"><mpath href="#f3"/></animateMotion></circle><circle class="pulso" r="2.4" fill="#EDE7FE"><animateMotion dur="2.1s" begin="-1.26s" repeatCount="indefinite"><mpath href="#f4"/></animateMotion></circle><circle class="pulso" r="2.4" fill="#EDE7FE"><animateMotion dur="2.1s" begin="-1.68s" repeatCount="indefinite"><mpath href="#f5"/></animateMotion></circle></svg></div>
-    <div class="areas">
-      <span class="distlbl">distribui</span>
-      <div class="area"><span class="dot"></span><span>VENDAS<small>nenhum lead esquecido</small></span></div>
-      <div class="area"><span class="dot"></span><span>MARKETING<small>anúncio no carro certo</small></span></div>
-      <div class="area"><span class="dot"></span><span>FINANCEIRO<small>margem à vista</small></span></div>
-      <div class="area"><span class="dot"></span><span>ESTOQUE<small>carro parado é dinheiro parado</small></span></div>
-      <div class="area"><span class="dot"></span><span>PÓS-VENDA<small>quem comprou, indica</small></span></div>
-      <div class="area"><span class="dot"></span><span>TREINAMENTO<small>sua equipe melhora toda semana</small></span></div>
-    </div>
+
+    <p class="bandeja-pe">O seu vendedor não recebe um lead. Recebe uma <b>visita marcada</b>, com o carro, a troca e a forma de pagamento já na mão.</p>
+  </div>
+
+  <div class="areas-chips rv">
+    <span>VENDAS</span><span>REATIVAÇÃO</span><span>AGENDA</span><span>PÁTIO</span><span>TREINAMENTO</span>
   </div>
 </div></section>
 
 <div class="faixa-numeros"><div class="wrap">
   <div class="nums">
-    <div class="num rv"><div class="big"><span data-conta="22">0</span>% → <span data-conta="4">0</span>%</div><p>conversão em 5 min × depois de 1 hora (Fenabrave)</p></div>
-    <div class="num rv"><div class="big">R$ <span data-conta="8">0</span> mil</div><p>de lucro que um único lead perdido leva embora</p></div>
-    <div class="num rv"><div class="big"><span data-conta="30">0</span>%</div><p>dos leads somem sem follow-up estruturado</p></div>
-    <div class="num rv"><div class="big">R$ <span data-conta="4">0</span> mil</div><p>o custo de um carro parado 90 dias no pátio</p></div>
+    <div class="num rv"><div class="big"><span data-conta="22">0</span>% → <span data-conta="4">0</span>%</div><p>lead respondido em 5 min × depois de 1 hora (MotorLeads)</p></div>
+    <div class="num rv"><div class="big">21h47 → 9h40</div><p>as 12 horas em que o lead das 21h compra do concorrente</p></div>
+    <div class="num rv"><div class="big">1 carro</div><p>cada lead perdido leva o lucro de um carro inteiro. A conta é sua, na calculadora abaixo</p></div>
   </div>
 </div></div>
 
 <section><div class="wrap">
   <span class="eyebrow rv">O diagnóstico</span>
   <h2 class="rv">O funil vaza onde ninguém olha: na <span class="grad">primeira resposta</span></h2>
-  <p class="sub-secao rv">Você paga portal, paga anúncio, paga sistema. E o lead das 21h é respondido às 9h40 do dia seguinte — quando ele já comprou do concorrente que respondeu primeiro. 55% do mercado leva mais de 5 DIAS para o primeiro contato. É dessa média que a sua loja vai se separar.</p>
+  <p class="sub-secao rv">Você paga portal, paga anúncio, paga sistema. E o lead das 21h é respondido às 9h40 do dia seguinte — quando ele já comprou do concorrente que respondeu primeiro. Lead respondido em 5 minutos converte 22%; depois de 1 hora, 4% (MotorLeads). É dessa hora que a sua loja vai se separar.</p>
   <div class="duascol rv">
     <div class="col nao"><h3>O que NÃO fazemos</h3><ul>
       <li>Tráfego pago antes de parar o vazamento</li>
       <li>Post bonito e "presença digital"</li>
-      <li>Chatbot genérico que irrita seu cliente</li>
+      <li>Robô de "digite 1" que irrita seu cliente</li>
       <li>Te obrigar a migrar de sistema — sua gestão e estoque ficam em paz</li>
       <li>Relatório de agência que ninguém lê</li>
     </ul></div>
     <div class="col sim"><h3>O que fazemos</h3><ul>
-      <li>Todo lead do portal respondido em 1 minuto, 24/7</li>
+      <li>Todo lead que chega no WhatsApp de atendimento respondido em 1 minuto, 24/7 — o comprador do portal chama no WhatsApp, e é ali que a máquina atende</li>
       <li>Qualificação de verdade: troca? financia? pra quando?</li>
       <li>Test-drive agendado direto na agenda da loja</li>
       <li>CRM de vendas que se acopla ao que você já usa</li>
       <li>Base antiga (comprou há 2-4 anos) reativada</li>
+      <li>Carteira e conversas ficam na loja — vendedor sai, o cliente não sai junto</li>
       <li>Painel do dono: leads, conversão e dias de pátio</li>
     </ul></div>
   </div>
@@ -386,7 +435,7 @@
   <h2 class="rv">Como funciona — as <span class="grad">4 fases</span></h2>
   <p class="sub-secao rv">Com nome, prazo e ordem. Nada de "vamos vendo".</p>
   <div class="grid-cards rv">
-    <div class="c"><div class="tag">FASE 0</div><h3>Fundação</h3><p>Conectamos seus portais, seu WhatsApp e seu estoque. Nada muda na sua rotina — a máquina se acopla ao que você já usa.</p></div>
+    <div class="c"><div class="tag">FASE 0</div><h3>Fundação</h3><p>Conectamos o WhatsApp de atendimento e a leitura do seu estoque. Nada muda na sua rotina — a máquina se acopla ao que você já usa.</p></div>
     <div class="c"><div class="tag">FASE 1</div><h3>Resposta Turbo</h3><p>O agente entra no ar: responde em segundos, qualifica, envia a ficha do carro e agenda a visita. De dia, de noite, no domingo.</p></div>
     <div class="c"><div class="tag">FASE 2</div><h3>Ressurreição da Base</h3><p>Quem comprou de você troca de carro em 2-4 anos. Sua base antiga volta pra loja — venda sem custo de lead.</p></div>
     <div class="c"><div class="tag">FASE 3</div><h3>Painel + Treinamento</h3><p>Você enxerga tudo: leads, conversão, test-drives, dias de pátio. E sua equipe treinada — quem fecha é gente.</p></div>
@@ -396,7 +445,7 @@
 <section style="padding-top:30px"><div class="wrap">
   <span class="eyebrow rv">O time</span>
   <h2 class="rv">Conheça o time que <span class="grad">nunca dorme</span></h2>
-  <p class="sub-secao rv">Não é "um robô". São cinco funcionários digitais, cada um com a sua função — trabalhando os 95% dos leads que o mercado inteiro joga fora, enquanto sua equipe cuida de quem está na loja.</p>
+  <p class="sub-secao rv">Não é "um robô". São cinco funções da máquina, cada uma com o seu trabalho — trabalhando os leads que hoje ficam sem resposta, à noite, no domingo e na base antiga, enquanto sua equipe cuida de quem está na loja.</p>
   <div class="grid-cards rv" style="grid-template-columns:repeat(auto-fit,minmax(188px,1fr))">
     <div class="c"><div class="tag">🕘 O RECEPCIONISTA</div><h3>Atende na hora</h3><p>Responde QUALQUER lead em segundos — 21h de terça, domingo de manhã, feriado. Nenhuma mensagem espera até amanhã.</p></div>
     <div class="c"><div class="tag">🔍 O QUALIFICADOR</div><h3>Separa o joio</h3><p>Pergunta o que importa: tem troca? financia ou à vista? pra quando? Só lead QUENTE chega no seu vendedor.</p></div>
@@ -409,19 +458,6 @@
   </div>
 </div></section>
 
-<section style="padding-top:40px"><div class="wrap">
-  <span class="eyebrow rv">O nível acima</span>
-  <h2 class="rv">O que só uma loja <span class="grad">IA-first</span> tem</h2>
-  <p class="sub-secao rv">Além do atendimento: as capacidades que separam quem tem infraestrutura de quem tem "um chatbot".</p>
-  <div class="grid-cards rv" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
-    <div class="c"><div class="tag">📞 LIGAÇÃO EM 1 MINUTO</div><h3>A loja liga primeiro</h3><p>Clicou no seu anúncio? A loja LIGA — voz natural, na hora — antes do concorrente acordar. Quem atende o telefone primeiro leva a venda.</p></div>
-    <div class="c"><div class="tag">🧠 MEMÓRIA DA LOJA</div><h3>Ninguém esquece um cliente</h3><p>Vendedor foi embora? A carteira, as conversas e até o time do coração de cada cliente FICAM na loja. Todo atendimento começa de onde o último parou.</p></div>
-    <div class="c"><div class="tag">🎬 FÁBRICA DE VÍDEO DO PÁTIO</div><h3>Seu estoque vira conteúdo</h3><p>Você grava o carro cru no celular; a IA corta, legenda e publica. Em loja de seminovos, o lead de vídeo cru custou METADE do criativo produzido.</p></div>
-    <div class="c"><div class="tag">🎧 FICHA POR ÁUDIO</div><h3>Ninguém digita nada</h3><p>Seu vendedor manda um áudio — a ficha do cliente e do carro da troca aparecem prontas no sistema. O balcão continua sendo balcão.</p></div>
-    <div class="c"><div class="tag">📊 ANÁLISE DAS CONVERSAS</div><h3>O raio-X do que vende</h3><p>A IA lê todos os atendimentos da loja e mostra qual frase fecha test-drive — e qual espanta comprador. Sua equipe melhora toda semana.</p></div>
-  </div>
-</div></section>
-
 <section><div class="wrap">
   <span class="eyebrow rv">A conta</span>
   <h2 class="rv">Quanto está <span class="grad">vazando</span> do seu pátio?</h2>
@@ -430,11 +466,12 @@
     <div class="calc-grid">
       <div class="campo"><label>Leads por mês (portais + WhatsApp) <output id="o-leads">60</output></label><input type="range" id="r-leads" min="20" max="300" step="10" value="60" aria-label="Leads por mês"></div>
       <div class="campo"><label>Lucro médio por carro vendido <output id="o-lucro">R$ 4.000</output></label><input type="range" id="r-lucro" min="2000" max="8000" step="500" value="4000" aria-label="Lucro médio por carro"></div>
+      <div class="campo"><label>Leads que hoje ficam sem resposta rápida (%) <output id="o-perdidos">30%</output></label><input type="range" id="r-perdidos" min="10" max="60" step="5" value="30" aria-label="Leads que hoje ficam sem resposta rápida, em porcentagem"></div>
     </div>
     <div class="resultado">
-      <div class="rotulo">Lucro que escapa por ano só com lead mal atendido (~30% dos leads, convertendo 1 em 10):</div>
+      <div class="rotulo">Lucro que escapa por ano só com lead mal atendido (convertendo 1 em 10):</div>
       <div class="valor" id="vazamento">R$ 0</div>
-      <div class="nota">Conta conservadora: 30% dos leads perdidos × conversão de 10% × seu lucro por carro × 12 meses. No diagnóstico refazemos com seus números reais.</div>
+      <div class="nota">Conta conservadora: os leads sem resposta rápida × conversão de 10% × seu lucro por carro × 12 meses. Os três números são seus; no diagnóstico refazemos com o seu funil real.</div>
     </div>
   </div>
 </div></section>
@@ -449,7 +486,6 @@
     <li>Painel do dono com os números que importam</li>
     <li>Treinamento da equipe + playbook de vendas</li>
     <li>Implantação guiada — presencial na região de Itajaí ou 100% remota</li>
-    <li>Acompanhamento semanal no primeiro trimestre</li>
     <li>Operação nas SUAS contas: os dados são seus</li>
   </ul>
 </div></section>
@@ -457,7 +493,7 @@
 <section style="padding-top:10px"><div class="wrap">
   <div class="garantia rv">
     <h2>Risco invertido, <span class="grad">com prova</span></h2>
-    <p>Se em 90 dias o sistema não gerar o número de test-drives agendados que combinarmos em contrato — com a sua equipe usando, e o painel prova quem usou — <b>devolvemos a implantação</b>. O risco é nosso, o processo é seu.</p>
+    <p>Se em 90 dias o sistema não gerar o número de test-drives agendados que combinarmos em contrato — com a sua equipe usando, e o painel prova quem usou — <b>seguimos trabalhando sem custo até bater</b>. O risco é nosso, o processo é seu.</p>
   </div>
 </div></section>
 
@@ -466,7 +502,7 @@
   <h2 class="rv">Pra quem é <span class="grad">(e pra quem não é)</span></h2>
   <div class="quem rv" style="margin-top:40px">
     <div><h3 style="color:var(--lilas)">É pra você que…</h3><ul>
-      <li>✓ Tem revenda de usados/seminovos com 15 a 60 carros no pátio</li>
+      <li>✓ Tem revenda de usados/seminovos com 15 a 80 carros no pátio</li>
       <li>✓ Paga portal (Webmotors, OLX, iCarros) e sente que joga lead fora</li>
       <li>✓ Está preso no balcão e no WhatsApp — inclusive à noite e no domingo</li>
       <li>✓ Quer processo, número e giro — não "presença digital"</li>
@@ -486,9 +522,9 @@
   <div class="faq rv" style="margin-top:40px">
     <details><summary>Robô não atende mal? Meu cliente gosta de falar com gente.</summary><div class="resp">O seu cliente gosta de ser RESPONDIDO. A conversa que roda no topo desta página é o padrão do agente: natural, qualifica e agenda — e a qualquer momento um humano assume. Compare com a alternativa real: o lead das 21h esperando até as 9h40. Quem fecha a venda continua sendo a sua equipe, no test-drive.</div></details>
     <details><summary>Preciso largar o sistema que já uso na loja?</summary><div class="resp">Não. Seu sistema de gestão, estoque e nota fiscal fica exatamente onde está. Nossa máquina entra como a camada de VENDAS: captura o lead, conversa, agenda e te mostra o funil — acoplada ao que você já tem.</div></details>
-    <details><summary>Quanto custa?</summary><div class="resp">Depende do tamanho da sua operação — por isso o diagnóstico vem antes, de graça. O que dá pra adiantar: a implantação tipicamente se paga com 4 a 5 carros vendidos a mais. Um mês bom.</div></details>
-    <details><summary>E se a minha equipe não usar?</summary><div class="resp">Treinamento da equipe faz parte do pacote — e o painel mostra quem usa. É por isso que conseguimos dar garantia: o contrato define a meta de test-drives, e o log prova o uso. Se sua equipe usar e o número não vier, devolvemos a implantação.</div></details>
-    <details><summary>Em quanto tempo fica no ar?</summary><div class="resp">14 dias da assinatura ao agente respondendo lead de verdade. A reativação da base antiga entra na sequência, na Fase 2.</div></details>
+    <details><summary>Quanto custa?</summary><div class="resp">Depende do tamanho do seu vazamento — por isso o diagnóstico vem antes, de graça. O que dá pra adiantar: a conta é feita com o seu lucro por carro, e você vê em quantos carros a mais ela se paga antes de assinar.</div></details>
+    <details><summary>E se a minha equipe não usar?</summary><div class="resp">Treinamento da equipe faz parte do pacote — e o painel mostra quem usa. É por isso que conseguimos dar garantia: o contrato define a meta de test-drives, e o log prova o uso. Se sua equipe usar e o número não vier, seguimos trabalhando sem custo até bater.</div></details>
+    <details><summary>Em quanto tempo fica no ar?</summary><div class="resp">O contrato prevê até 45 dias da assinatura até tudo rodando — atendimento, agenda e reativação da base antiga. O agente começa a responder lead de verdade antes disso, na Fase 1.</div></details>
   </div>
 </div></section>
 
@@ -501,7 +537,7 @@
 </div></section>
 
 <footer><div class="wrap">
-  Pátio Vivo™ · Infraestrutura de vendas com IA para revendas de veículos · Itajaí/SC<br>
+  Pátio Vivo™ · Inteligência comercial para revendas de veículos · Itajaí/SC<br>
   Instalada e usada primeiro na nossa própria empresa. Sem promessas vazias, só processo.
 </div></footer>
 
@@ -532,12 +568,14 @@
   function recalc(){
     var leads = +document.getElementById('r-leads').value;
     var lucro = +document.getElementById('r-lucro').value;
+    var perdidos = +document.getElementById('r-perdidos').value;
     document.getElementById('o-leads').textContent = leads;
     document.getElementById('o-lucro').textContent = fmt(lucro);
-    var vaz = Math.round(leads * 0.30 * 0.10 * lucro * 12);
+    document.getElementById('o-perdidos').textContent = perdidos + '%';
+    var vaz = Math.round(leads * (perdidos/100) * 0.10 * lucro * 12);
     document.getElementById('vazamento').textContent = fmt(vaz) + ' /ano';
   }
-  ['r-leads','r-lucro'].forEach(function(id){ document.getElementById(id).addEventListener('input', recalc); });
+  ['r-leads','r-lucro','r-perdidos'].forEach(function(id){ document.getElementById(id).addEventListener('input', recalc); });
   recalc();
 
   /* conversa do hero */
@@ -551,17 +589,14 @@
     {t:'nosso', txt:'Ótimo! Onix entra bem na troca. Pretende financiar o restante ou à vista? E pra quando você quer trocar de carro?', h:'21:49', espera:2600},
     {t:'deles', txt:'Financiar. Se der certo, esse mês ainda', h:'21:51', espera:1700},
     {t:'digita', espera:1400},
-    {t:'card', espera:2200},
-    {t:'nosso', txt:'Te mando a ficha completa acima 👆 Quer agendar um test-drive? Tenho quinta às 10h ou sábado às 9h30 — qual prefere?', h:'21:52', espera:2400},
+    {t:'nosso', txt:'Ficha: Chevrolet Cruze Sport6 LT 1.8 · 2015/2016 · 87.370 km · R$ 72.990 · revisado.', h:'21:52', espera:2200},
+    {t:'nosso', txt:'Quer agendar um test-drive? Tenho quinta às 10h ou sábado às 9h30 — qual prefere?', h:'21:52', espera:2400},
     {t:'deles', txt:'Quinta 10h fica ótimo', h:'21:53', espera:1500},
     {t:'agendado', txt:'✓ TEST-DRIVE AGENDADO · quinta, 10h · lead qualificado: troca Onix 2018 + financiamento', espera:3800}
   ];
   function bolha(item){
     var el;
-    if (item.t === 'card') {
-      el = document.createElement('div'); el.className = 'card-carro';
-      el.innerHTML = '<div class="foto-carro">🚗</div><div class="info"><b>Chevrolet Cruze Sport6 LT 1.8</b><span>2015/2016 · 87.370 km · R$ 72.990</span></div>';
-    } else if (item.t === 'agendado') {
+    if (item.t === 'agendado') {
       el = document.createElement('div'); el.className = 'agendado'; el.textContent = item.txt;
     } else {
       el = document.createElement('div'); el.className = 'msg ' + (item.t === 'deles' ? 'deles' : 'nosso');
